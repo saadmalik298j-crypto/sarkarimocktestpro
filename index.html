@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quant Shortcuts & Speed Math Cheat Sheet for SSC & Banking Aspirants</title>
+  <meta name="description" content="Ultimate printable quantitative aptitude cheat sheet for SSC CGL, CHSL, IBPS PO, and SBI Clerk. Features fraction-to-percentage tables, squares, cubes, formulas, mental calculation tricks, and common pitfalls.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Quantitative Aptitude Shortcuts and Speed Math Cheat Sheet for SSC and Banking Aspirants",
+    "description": "Comprehensive reference guide and printable formula sheet featuring fraction-percentage conversions, speed math shortcuts, profit-loss, ratio, speed-distance formulas, and calculation error prevention.",
+    "author": {
+      "@type": "Organization",
+      "name": "Competitive Exam Prep Hub"
+    },
+    "genre": "Educational",
+    "keywords": "Quant shortcuts, SSC CGL quant cheat sheet, banking quantitative aptitude formulas, speed math tricks, fraction to percentage table, squares and cubes chart",
+    "datePublished": "2026-10-15",
+    "dateModified": "2026-10-15",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://sarkarimocktest.com/quant-shortcuts-cheat-sheet"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent: #059669;
+      --accent-light: #ecfdf5;
+      --warning: #b45309;
+      --warning-light: #fef3c7;
+      --danger: #dc2626;
+      --danger-light: #fef2f2;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #090d16;
+        --card-bg: #111827;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border-color: #1f2937;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --primary-light: #172554;
+        --accent: #10b981;
+        --accent-light: #064e3b;
+        --warning: #f59e0b;
+        --warning-light: #451a03;
+        --danger: #f87171;
+        --danger-light: #450a0a;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.55;
+      padding: 1.5rem 1rem 3rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      background: var(--primary-light);
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 800px;
+      margin-bottom: 1.25rem;
+    }
+
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.25rem;
+    }
+
+    .search-wrapper {
+      position: relative;
+      flex: 1 1 320px;
+      max-width: 480px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.65rem 1rem 0.65rem 2.25rem;
+      font-size: 0.9rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: var(--bg-color);
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      pointer-events: none;
+    }
+
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease;
+    }
+
+    .btn-print:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-print:active {
+      transform: scale(0.98);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.35rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(37, 99, 235, 0.4);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-main);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0.85rem 0 0.35rem 0;
+      color: var(--primary);
+    }
+
+    p, li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .intro-text {
+      margin-bottom: 0.85rem;
+      font-size: 0.875rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.825rem;
+      margin: 0.5rem 0;
+    }
+
+    th, td {
+      padding: 0.45rem 0.6rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      tbody tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.02);
+      }
+    }
+
+    .code-box, .formula-pill {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 0.2rem 0.45rem;
+      font-size: 0.8rem;
+      color: var(--text-main);
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .example-box {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 0.65rem 0.85rem;
+      border-radius: 0 6px 6px 0;
+      margin: 0.5rem 0;
+      font-size: 0.825rem;
+    }
+
+    .example-box strong {
+      color: var(--accent);
+    }
+
+    .mistake-box {
+      background: var(--danger-light);
+      border-left: 3px solid var(--danger);
+      padding: 0.75rem 0.95rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 0.75rem;
+      font-size: 0.825rem;
+    }
+
+    .mistake-title {
+      font-weight: 700;
+      color: var(--danger);
+      margin-bottom: 0.25rem;
+      font-size: 0.875rem;
+    }
+
+    .solution-text {
+      color: var(--text-main);
+      margin-top: 0.35rem;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .tag-wrong { background: #fee2e2; color: #991b1b; }
+    .tag-right { background: #dcfce7; color: #166534; }
+
+    .formula-group {
+      margin-bottom: 1rem;
+    }
+
+    .formula-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.35rem 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.85rem;
+    }
+
+    .formula-row span:first-child {
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .closing-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-top: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .closing-section h2 {
+      border: none;
+      padding: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .closing-section a {
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .closing-section a:hover {
+      color: var(--primary-hover);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      padding: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      word-break: break-all;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+      display: none;
+      grid-column: 1 / -1;
+    }
+
+    /* Print Specific Styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        font-size: 8pt !important;
+        line-height: 1.25 !important;
+      }
+
+      .container {
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+
+      header, .action-bar, .search-wrapper, .btn-print, footer .hide-print {
+        display: none !important;
+      }
+
+      .print-header {
+        display: block !important;
+        text-align: center;
+        border-bottom: 2px solid #000;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+      }
+
+      .print-header h1 {
+        font-size: 14pt !important;
+        margin-bottom: 2px !important;
+      }
+
+      .print-header p {
+        font-size: 8pt !important;
+        color: #333 !important;
+      }
+
+      .card {
+        border: 1px solid #999 !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        padding: 6px 8px !important;
+        margin-bottom: 8px !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .grid-2, .grid-3 {
+        display: block !important;
+      }
+
+      .grid-print-split {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 6px !important;
+      }
+
+      h2 {
+        font-size: 10pt !important;
+        padding-bottom: 2px !important;
+        margin-bottom: 4px !important;
+        border-bottom: 1px solid #333 !important;
+      }
+
+      h3 {
+        font-size: 8.5pt !important;
+        margin: 4px 0 2px 0 !important;
+      }
+
+      p, li, td, th {
+        font-size: 7.5pt !important;
+        color: #000 !important;
+      }
+
+      table th {
+        background: #eee !important;
+        color: #000 !important;
+      }
+
+      table th, table td {
+        padding: 2px 4px !important;
+      }
+
+      .example-box, .mistake-box {
+        background: #f8f8f8 !important;
+        border-left: 2px solid #333 !important;
+        padding: 4px 6px !important;
+        margin: 4px 0 !important;
+      }
+
+      .tag-wrong, .tag-right {
+        border: 1px solid #666;
+        background: transparent !important;
+        color: #000 !important;
+      }
+
+      .closing-section {
+        border: 1px dashed #666 !important;
+        padding: 6px !important;
+        margin-top: 8px !important;
+        page-break-inside: avoid;
+      }
+
+      footer {
+        margin-top: 6px !important;
+        padding: 4px !important;
+        font-size: 7pt !important;
+      }
+    }
+
+    .print-header {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Print Only Header -->
+  <div class="print-header">
+    <h1>Quant Shortcuts & Speed Math Cheat Sheet</h1>
+    <p>Target: SSC CGL, CHSL, CPO, IBPS PO/Clerk, SBI PO & RRB | Quick Revision Single Page Edition</p>
+  </div>
+
+  <div class="container">
+    <!-- Main Interactive Header -->
+    <header>
+      <span class="badge">SSC & Banking Competitive Exam Prep</span>
+      <h1>Quantitative Aptitude Speed Shortcuts Cheat Sheet</h1>
+      <p class="subtitle">
+        A precision revision toolkit for competitive aspirants. Memorize core fractional equivalents, power grids, foundational arithmetic formulas, rapid mental math heuristics, and exam-day traps.
+      </p>
+
+      <div class="action-bar">
+        <div class="search-wrapper">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="shortcutSearch" class="search-input" placeholder="Search formulas, tables, or tricks (e.g. '1/7', 'square of 25', 'boat', 'alligation')..." aria-label="Search quant shortcuts">
+        </div>
+        <button type="button" class="btn-print" onclick="window.print()">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+          </svg>
+          Print Quick Reference Sheet
+        </button>
+      </div>
+    </header>
+
+    <div id="noResults" class="no-results">No formulas or shortcuts match your search query. Try another keyword.</div>
+
+    <!-- Section 1 & 2: Tables (Fractions, Squares, Cubes) -->
+    <div class="grid-2 searchable-container">
+      <!-- Fraction to Percentage Table -->
+      <section class="card filterable" data-keywords="fraction percentage table 1/2 1/3 1/4 1/5 1/6 1/7 1/8 1/9 1/10 1/11 1/12 1/13 1/14 1/15 1/16 1/17 1/18 1/19 1/20 ratio conversion decimal">
+        <h2>1. Fraction to Percentage Table (1/2 to 1/20)</h2>
+        <p class="intro-text">Instantly translating recurring decimals and percentages into clean fractions eliminates lengthy long divisions in Data Interpretation (DI) and Simple/Compound Interest problems.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Fraction</th>
+              <th>Percentage</th>
+              <th>Decimal</th>
+              <th>Exam Multiplier Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>1/2</strong></td><td>50%</td><td>0.50</td><td>Base half</td></tr>
+            <tr><td><strong>1/3</strong></td><td>33.33% (33 1/3%)</td><td>0.3333</td><td>2/3 = 66.66%</td></tr>
+            <tr><td><strong>1/4</strong></td><td>25%</td><td>0.25</td><td>3/4 = 75%</td></tr>
+            <tr><td><strong>1/5</strong></td><td>20%</td><td>0.20</td><td>2/5 = 40%, 3/5 = 60%, 4/5 = 80%</td></tr>
+            <tr><td><strong>1/6</strong></td><td>16.67% (16 2/3%)</td><td>0.1666</td><td>5/6 = 83.33%</td></tr>
+            <tr><td><strong>1/7</strong></td><td>14.28% (14 2/7%)</td><td>0.1428</td><td>2/7 = 28.57%, 3/7 = 42.85%</td></tr>
+            <tr><td><strong>1/8</strong></td><td>12.5% (12 1/2%)</td><td>0.125</td><td>3/8 = 37.5%, 5/8 = 62.5%, 7/8 = 87.5%</td></tr>
+            <tr><td><strong>1/9</strong></td><td>11.11% (11 1/9%)</td><td>0.1111</td><td>Multiples of 11.11% (4/9 = 44.44%)</td></tr>
+            <tr><td><strong>1/10</strong></td><td>10%</td><td>0.10</td><td>Standard shift</td></tr>
+            <tr><td><strong>1/11</strong></td><td>9.09% (9 1/11%)</td><td>0.0909</td><td>Multiples of 9.09% (7/11 = 63.63%)</td></tr>
+            <tr><td><strong>1/12</strong></td><td>8.33% (8 1/3%)</td><td>0.0833</td><td>5/12 = 41.67%</td></tr>
+            <tr><td><strong>1/13</strong></td><td>7.69% (7 9/13%)</td><td>0.0769</td><td>Frequent in banking compound rates</td></tr>
+            <tr><td><strong>1/14</strong></td><td>7.14% (7 1/7%)</td><td>0.0714</td><td>Half of 1/7 (14.28% / 2)</td></tr>
+            <tr><td><strong>1/15</strong></td><td>6.67% (6 2/3%)</td><td>0.0667</td><td>4/15 = 26.67%</td></tr>
+            <tr><td><strong>1/16</strong></td><td>6.25% (6 1/4%)</td><td>0.0625</td><td>Half of 1/8 (12.5% / 2); 3/16 = 18.75%</td></tr>
+            <tr><td><strong>1/17</strong></td><td>5.88% (5 15/17%)</td><td>0.0588</td><td>Key prime fraction</td></tr>
+            <tr><td><strong>1/18</strong></td><td>5.55% (5 5/9%)</td><td>0.0555</td><td>Half of 1/9 (11.11% / 2)</td></tr>
+            <tr><td><strong>1/19</strong></td><td>5.26% (5 5/19%)</td><td>0.0526</td><td>Approximated as ~5.26% in DI</td></tr>
+            <tr><td><strong>1/20</strong></td><td>5%</td><td>0.05</td><td>Quarter of 1/5</td></tr>
+          </tbody>
+        </table>
+        <div class="example-box">
+          <strong>Worked Example:</strong> Find 37.5% of 648 + 14.28% of 840.<br>
+          <em>Shortcut:</em> Replace 37.5% with 3/8 and 14.28% with 1/7.<br>
+          Calculation: (3/8 &times; 648) + (1/7 &times; 840) = (3 &times; 81) + 120 = 243 + 120 = <strong>363</strong>.
+        </div>
+      </section>
+
+      <!-- Squares & Cubes Table -->
+      <section class="card filterable" data-keywords="squares cubes table 1 to 30 squares 1 to 15 cubes powers roots simplification">
+        <h2>2. Squares (1 to 30) & Cubes (1 to 15)</h2>
+        <p class="intro-text">Rapid identification of squares and cubes powers speeds up series completion, compound interest intervals, and quadratic simplification questions.</p>
+        
+        <h3>Squares up to 30</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>N</th><th>N&sup2;</th>
+              <th>N</th><th>N&sup2;</th>
+              <th>N</th><th>N&sup2;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>1</strong></td><td>11</td><td><strong>121</strong></td><td>21</td><td><strong>441</strong></td></tr>
+            <tr><td>2</td><td><strong>4</strong></td><td>12</td><td><strong>144</strong></td><td>22</td><td><strong>484</strong></td></tr>
+            <tr><td>3</td><td><strong>9</strong></td><td>13</td><td><strong>169</strong></td><td>23</td><td><strong>529</strong></td></tr>
+            <tr><td>4</td><td><strong>16</strong></td><td>14</td><td><strong>196</strong></td><td>24</td><td><strong>576</strong></td></tr>
+            <tr><td>5</td><td><strong>25</strong></td><td>15</td><td><strong>225</strong></td><td>25</td><td><strong>625</strong></td></tr>
+            <tr><td>6</td><td><strong>36</strong></td><td>16</td><td><strong>256</strong></td><td>26</td><td><strong>676</strong></td></tr>
+            <tr><td>7</td><td><strong>49</strong></td><td>17</td><td><strong>289</strong></td><td>27</td><td><strong>729</strong></td></tr>
+            <tr><td>8</td><td><strong>64</strong></td><td>18</td><td><strong>324</strong></td><td>28</td><td><strong>784</strong></td></tr>
+            <tr><td>9</td><td><strong>81</strong></td><td>19</td><td><strong>361</strong></td><td>29</td><td><strong>841</strong></td></tr>
+            <tr><td>10</td><td><strong>100</strong></td><td>20</td><td><strong>400</strong></td><td>30</td><td><strong>900</strong></td></tr>
+          </tbody>
+        </table>
+
+        <h3>Cubes up to 15</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>N</th><th>N&sup3;</th>
+              <th>N</th><th>N&sup3;</th>
+              <th>N</th><th>N&sup3;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><strong>1</strong></td><td>6</td><td><strong>216</strong></td><td>11</td><td><strong>1,331</strong></td></tr>
+            <tr><td>2</td><td><strong>8</strong></td><td>7</td><td><strong>343</strong></td><td>12</td><td><strong>1,728</strong></td></tr>
+            <tr><td>3</td><td><strong>27</strong></td><td>8</td><td><strong>512</strong></td><td>13</td><td><strong>2,197</strong></td></tr>
+            <tr><td>4</td><td><strong>64</strong></td><td>9</td><td><strong>729</strong></td><td>14</td><td><strong>2,744</strong></td></tr>
+            <tr><td>5</td><td><strong>125</strong></td><td>10</td><td><strong>1,000</strong></td><td>15</td><td><strong>3,375</strong></td></tr>
+          </tbody>
+        </table>
+        <div class="example-box">
+          <strong>Worked Example:</strong> Solve &radic;784 + &sup3;&radic;2197 &minus; 23&sup2;.<br>
+          <em>Direct Lookup:</em> &radic;784 = 28, &sup3;&radic;2197 = 13, and 23&sup2; = 529.<br>
+          Calculation: 28 + 13 &minus; 529 = 41 &minus; 529 = <strong>&minus;488</strong>.
+        </div>
+      </section>
+    </div>
+
+    <!-- Section 3: Core Exam Formulas -->
+    <section class="card filterable" style="margin-bottom: 1.25rem;" data-keywords="profit loss ratio proportion speed time distance formulas relative speed alligation markup discount faulty balance train boat stream">
+      <h2>3. Core High-Yield Exam Formulas & Worked Examples</h2>
+      <div class="grid-3">
+        <!-- Profit, Loss & Discount -->
+        <div class="formula-group">
+          <h3>Profit, Loss & Markup</h3>
+          <div class="formula-row">
+            <span>Profit & Loss %</span>
+            <span class="code-box">P/CP &times; 100 | L/CP &times; 100</span>
+          </div>
+          <div class="formula-row">
+            <span>Selling Price (SP)</span>
+            <span class="code-box">CP &times; (100 &plusmn; P/L)%</span>
+          </div>
+          <div class="formula-row">
+            <span>Markup & Discount</span>
+            <span class="code-box">SP = MP &times; (1 &minus; D/100)</span>
+          </div>
+          <div class="formula-row">
+            <span>Successive Discounts (d1, d2)</span>
+            <span class="code-box">D = d1 + d2 &minus; (d1&times;d2)/100</span>
+          </div>
+          <div class="formula-row">
+            <span>CP to MP Relation</span>
+            <span class="code-box">CP/MP = (100 &minus; D)/(100 + P)</span>
+          </div>
+          <div class="formula-row">
+            <span>Dishonest Dealer Gain %</span>
+            <span class="code-box">[Error / (True &minus; Error)] &times; 100</span>
+          </div>
+          <div class="example-box">
+            <strong>Worked Example (CP/MP Shortcut):</strong> An article is sold at a 10% discount and yields a 20% profit. Find the markup % over Cost Price.<br>
+            <em>Formula:</em> CP/MP = (100 &minus; 10)/(100 + 20) = 90/120 = 3/4.<br>
+            If CP = 3 units, MP = 4 units. Markup = (4 &minus; 3)/3 = 1/3 = <strong>33.33%</strong>.
+          </div>
+        </div>
+
+        <!-- Ratio & Proportion -->
+        <div class="formula-group">
+          <h3>Ratio, Proportion & Alligation</h3>
+          <div class="formula-row">
+            <span>Mean Proportional</span>
+            <span class="code-box">b = &radic;(a &times; c)</span>
+          </div>
+          <div class="formula-row">
+            <span>Third Proportional</span>
+            <span class="code-box">c = b&sup2; / a</span>
+          </div>
+          <div class="formula-row">
+            <span>Fourth Proportional</span>
+            <span class="code-box">d = (b &times; c) / a</span>
+          </div>
+          <div class="formula-row">
+            <span>Compounded Ratio</span>
+            <span class="code-box">(a/b) &times; (c/d) = ac/bd</span>
+          </div>
+          <div class="formula-row">
+            <span>Rule of Alligation</span>
+            <span class="code-box">(Cheaper Q) / (Dearer Q) = (d &minus; m) / (m &minus; c)</span>
+          </div>
+          <div class="formula-row">
+            <span>Repeated Dilution</span>
+            <span class="code-box">Remaining = Initial &times; (1 &minus; x/V)&#8319;</span>
+          </div>
+          <div class="example-box">
+            <strong>Worked Example (Alligation):</strong> Tea at &dollar;60/kg is mixed with tea at &dollar;85/kg to produce a mixture worth &dollar;75/kg. Find the mixing ratio.<br>
+            <em>Ratio:</em> (Cheaper) : (Dearer) = (85 &minus; 75) : (75 &minus; 60) = 10 : 15 = <strong>2 : 3</strong>.
+          </div>
+        </div>
+
+        <!-- Speed, Time & Distance -->
+        <div class="formula-group">
+          <h3>Speed, Time & Distance</h3>
+          <div class="formula-row">
+            <span>Unit Conversion</span>
+            <span class="code-box">1 km/h = 5/18 m/s | 1 m/s = 18/5 km/h</span>
+          </div>
+          <div class="formula-row">
+            <span>Average Speed (Equal Distances)</span>
+            <span class="code-box">2xy / (x + y)</span>
+          </div>
+          <div class="formula-row">
+            <span>Relative Speed (Opposite)</span>
+            <span class="code-box">S&#8321; + S&#8322; (approaching)</span>
+          </div>
+          <div class="formula-row">
+            <span>Relative Speed (Same Direction)</span>
+            <span class="code-box">|S&#8321; &minus; S&#8322;| (overtaking)</span>
+          </div>
+          <div class="formula-row">
+            <span>Train Crossing Platform (Lp)</span>
+            <span class="code-box">Time = (L&#8341; + L&#7510;) / Speed</span>
+          </div>
+          <div class="formula-row">
+            <span>Boats: Downstream & Upstream</span>
+            <span class="code-box">D = B + S | U = B &minus; S | B = (D+U)/2</span>
+          </div>
+          <div class="example-box">
+            <strong>Worked Example (Average Speed):</strong> A cyclist goes from A to B at 20 km/h and returns at 30 km/h. Find average speed for the round trip.<br>
+            <em>Shortcut:</em> 2xy / (x + y) = (2 &times; 20 &times; 30) / (20 + 30) = 1200 / 50 = <strong>24 km/h</strong> (NOT 25 km/h!).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: 5 Mental Calculation Tricks -->
+    <section class="card filterable" style="margin-bottom: 1.25rem;" data-keywords="mental calculation tricks speed math squaring numbers ending in 5 multiply by 11 base 100 nikhilam percentage interchange unit digits sum to 10">
+      <h2>4. Five Essential Speed-Math Mental Calculation Tricks</h2>
+      <p class="intro-text">Mastering these mental arithmetic techniques enables aspirants to bypass pen-and-paper scratchwork and gain 5 to 10 seconds on each question.</p>
+      
+      <div class="grid-2">
+        <div class="card" style="box-shadow: none; border-color: var(--border-color);">
+          <h3>Trick 1: Squaring Any Number Ending in 5</h3>
+          <p><strong>Rule:</strong> To square a two-digit or multi-digit integer represented as <span class="code-box">N5</span>, multiply the leading digits <span class="code-box">N</span> by <span class="code-box">(N + 1)</span> and append <span class="code-box">25</span> to the end.</p>
+          <div class="example-box">
+            <strong>Original Example: Compute 75&sup2; and 115&sup2;</strong><br>
+            &bull; For 75: N = 7. Compute 7 &times; (7 + 1) = 7 &times; 8 = 56. Append 25 &rarr; <strong>5,625</strong>.<br>
+            &bull; For 115: N = 11. Compute 11 &times; 12 = 132. Append 25 &rarr; <strong>13,225</strong>.
+          </div>
+        </div>
+
+        <div class="card" style="box-shadow: none; border-color: var(--border-color);">
+          <h3>Trick 2: Rapid Multiplication by 11 (The Sandwich Method)</h3>
+          <p><strong>Rule:</strong> Keep the first and last digits in place. Every intermediate digit is the sum of adjacent digit pairs from right to left, carrying forward any values &ge; 10.</p>
+          <div class="example-box">
+            <strong>Original Example: Multiply 4,352 by 11</strong><br>
+            1. Rightmost digit is <strong>2</strong>.<br>
+            2. 5 + 2 = <strong>7</strong>.<br>
+            3. 3 + 5 = <strong>8</strong>.<br>
+            4. 4 + 3 = <strong>7</strong>.<br>
+            5. Leftmost digit is <strong>4</strong>.<br>
+            Combine: <strong>47,872</strong>. (No paper scratchwork needed!)
+          </div>
+        </div>
+
+        <div class="card" style="box-shadow: none; border-color: var(--border-color);">
+          <h3>Trick 3: Multiplication of Numbers Near Base 100</h3>
+          <p><strong>Rule:</strong> For numbers <span class="code-box">(100 + a)</span> and <span class="code-box">(100 + b)</span>: the left part is <span class="code-box">100 + a + b</span>, and the right two digits are <span class="code-box">a &times; b</span>.</p>
+          <div class="example-box">
+            <strong>Original Example: Multiply 107 &times; 108</strong><br>
+            &bull; Base deviations: +7 and +8.<br>
+            &bull; Left side: 107 + 8 = 115.<br>
+            &bull; Right side: 7 &times; 8 = 56.<br>
+            Concatenate: <strong>11,556</strong>.<br>
+            <em>Sub-100 variation:</em> 96 &times; 94 (deviations &minus;4 and &minus;6). Left: 96 &minus; 6 = 90. Right: (&minus;4) &times; (&minus;6) = 24. Result = <strong>9,024</strong>.
+          </div>
+        </div>
+
+        <div class="card" style="box-shadow: none; border-color: var(--border-color);">
+          <h3>Trick 4: Units Sum to 10 & Tens Digits Identical</h3>
+          <p><strong>Rule:</strong> For products of two-digit numbers where tens digits are equal (<span class="code-box">a</span>) and unit digits satisfy <span class="code-box">b + c = 10</span>: Product = <span class="code-box">[a &times; (a + 1)] &times; 100 + (b &times; c)</span>.</p>
+          <div class="example-box">
+            <strong>Original Example: Calculate 64 &times; 66</strong><br>
+            &bull; Tens digits = 6 (identical); Units = 4 + 6 = 10.<br>
+            &bull; Left block: 6 &times; (6 + 1) = 42.<br>
+            &bull; Right block: 4 &times; 6 = 24.<br>
+            Combine: <strong>4,224</strong>.
+          </div>
+        </div>
+
+        <div class="card" style="box-shadow: none; border-color: var(--border-color); grid-column: 1 / -1;">
+          <h3>Trick 5: The Percentage Interchange & Fractional Split Method</h3>
+          <p><strong>Rule:</strong> Because percentage multiplication is commutative, <span class="code-box">X% of Y = Y% of X</span>. When calculating an awkward percentage of a friendly number, reverse the operation or split into base building blocks (50%, 10%, 5%, 1%).</p>
+          <div class="example-box">
+            <strong>Original Example: Find 68% of 25 and 43% of 450</strong><br>
+            &bull; Part A: 68% of 25 = 25% of 68 = 1/4 of 68 = <strong>17</strong>.<br>
+            &bull; Part B: 43% of 450 = Split 43% into (50% &minus; 5% &minus; 2%).<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;50% of 450 = 225.0<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;5% of 450 = 22.5<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;2% of 450 = 9.0 (since 1% = 4.5)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Total = 225 &minus; 22.5 &minus; 9 = 202.5 &minus; 9 = <strong>193.5</strong>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Common Calculation Mistakes -->
+    <section class="card filterable" style="margin-bottom: 1.25rem;" data-keywords="common calculation mistakes errors traps pitfalls percentage base shift average speed harmonic mean successive discount faulty weights train length platform">
+      <h2>5. Five Fatal Calculation Mistakes in SSC & Banking (And How to Avoid Them)</h2>
+      <p class="intro-text">Negative marking in SSC and sectional timers in Banking penalize recurring conceptual traps. Review these five classic pitfalls:</p>
+      
+      <div class="mistake-box">
+        <div class="mistake-title">Trap 1: The Asymmetric Percentage Base Shift Error</div>
+        <p><span class="tag tag-wrong">Common Mistake:</span> Assuming that if Price of Sugar increases by 25%, consumption must reduce by 25% to maintain constant expenditure.</p>
+        <div class="solution-text">
+          <span class="tag tag-right">Correct Method:</span> When the base increases by fraction <span class="code-box">a/b</span>, the offsetting reduction to restore the original value is <span class="code-box">a / (a + b)</span>.<br>
+          <em>Proof:</em> 25% increase = +1/4. Offsetting reduction = 1 / (4 + 1) = 1/5 = <strong>20%</strong>. (Never 25%).
+        </div>
+      </div>
+
+      <div class="mistake-box">
+        <div class="mistake-title">Trap 2: Using Arithmetic Mean for Average Speed Over Equal Distances</div>
+        <p><span class="tag tag-wrong">Common Mistake:</span> Averaging speeds directly as <span class="code-box">(v1 + v2) / 2</span> when covering the same distance at different velocities.</p>
+        <div class="solution-text">
+          <span class="tag tag-right">Correct Method:</span> Average speed is Total Distance &divide; Total Time. When distances are equal, the average is the <em>harmonic mean</em>: <span class="code-box">2 &times; v1 &times; v2 / (v1 + v2)</span>.<br>
+          <em>Example:</em> Driving to office at 60 km/h and returning at 40 km/h is NOT 50 km/h; it is <strong>48 km/h</strong>: (2 &times; 60 &times; 40) / 100 = 4800 / 100 = 48.
+        </div>
+      </div>
+
+      <div class="mistake-box">
+        <div class="mistake-title">Trap 3: Adding Successive Discounts Directly</div>
+        <p><span class="tag tag-wrong">Common Mistake:</span> Assuming two consecutive discounts of 20% and 10% equate to a single discount of 30%.</p>
+        <div class="solution-text">
+          <span class="tag tag-right">Correct Method:</span> Successive discounts compound on the diminishing balance: <span class="code-box">Net D% = d1 + d2 &minus; (d1 &times; d2)/100</span>.<br>
+          <em>Example:</em> 20 + 10 &minus; (20 &times; 10)/100 = 30 &minus; 2 = <strong>28%</strong>. Direct addition inflates the discount by 2% and ruins profit/loss answers.
+        </div>
+      </div>
+
+      <div class="mistake-box">
+        <div class="mistake-title">Trap 4: Calculating Dishonest Dealer Profit on True Weight Instead of Given Weight</div>
+        <p><span class="tag tag-wrong">Common Mistake:</span> If a grocer promises 1000g but dispenses 800g, calculating profit % as (200 / 1000) &times; 100 = 20%.</p>
+        <div class="solution-text">
+          <span class="tag tag-right">Correct Method:</span> The seller's actual cost basis is only the weight delivered (800g). Profit % = <span class="code-box">[Error / True Value Sold] &times; 100 = [200 / 800] &times; 100 = 25%</span>.<br>
+          Always divide the discrepancy by what leaves the shop, not what the buyer requested.
+        </div>
+      </div>
+
+      <div class="mistake-box">
+        <div class="mistake-title">Trap 5: Neglecting Train Length When Crossing Platforms and Bridges</div>
+        <p><span class="tag tag-wrong">Common Mistake:</span> Taking distance as only the length of the platform when computing the time taken by a train to cross it.</p>
+        <div class="solution-text">
+          <span class="tag tag-right">Correct Method:</span> A point object (pole, standing person) requires traversing only train length <span class="code-box">Lt</span>. A platform or tunnel requires traversing <span class="code-box">Lt + Lp</span>.<br>
+          <em>Example:</em> A 200m train travelling at 54 km/h (15 m/s) crossing a 300m bridge takes (200 + 300) / 15 = 500 / 15 = <strong>33.33 seconds</strong>. Using just 300m yields 20s, which is an immediate exam distractor choice.
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Strategic Recommendation Section -->
+    <section class="closing-section">
+      <h2>How to Convert Formula Memorization Into Exam Velocity</h2>
+      <p style="margin-bottom: 0.85rem;">
+        Theoretical mastery of formulas represents only half the challenge in exams like SSC CGL Tier 1/Tier 2 and IBPS PO Mains. Under strict countdown timers, cognitive load causes memory retrieval freezes. The most effective strategy is active recall: paste this printable cheat sheet at your desk, review one column each morning, and immediately <a href="https://sarkarimocktest.com/" target="_blank" rel="noopener">practise these shortcuts in timed mock tests</a> to cement speed intuition under genuine test constraints.
+      </p>
+      <p>
+        Systematic repetition builds the neural fluency needed to identify within 3 seconds whether a question requires the harmonic mean formula, a 1/7 fraction replacement, or the dishonest seller ratio shortcut.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Competitive Exam Quant Revision Hub. Printable Single-Page Reference Guide.</p>
+      <p style="margin-top: 0.35rem;">Official Reference Resource: <a href="https://sarkarimocktest.com/" target="_blank" rel="noopener">https://sarkarimocktest.com/</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // Live Search Filter Script for Real-Time Formula Lookup
+    document.addEventListener('DOMContentLoaded', function () {
+      var searchInput = document.getElementById('shortcutSearch');
+      var filterableSections = document.querySelectorAll('.filterable');
+      var noResultsNotice = document.getElementById('noResults');
+
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', function (e) {
+        var query = e.target.value.toLowerCase().trim();
+        var visibleCount = 0;
+
+        filterableSections.forEach(function (section) {
+          var keywords = (section.getAttribute('data-keywords') || '').toLowerCase();
+          var contentText = section.textContent.toLowerCase();
+
+          if (!query || keywords.indexOf(query) !== -1 || contentText.indexOf(query) !== -1) {
+            section.style.display = '';
+            visibleCount++;
+          } else {
+            section.style.display = 'none';
+          }
+        });
+
+        if (noResultsNotice) {
+          noResultsNotice.style.display = (visibleCount === 0 && query !== '') ? 'block' : 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
